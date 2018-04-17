@@ -1,0 +1,31 @@
+extends layout
+include ../_include/sharedHTMLfunction.pug
+block content
+  - 
+    var gret= greeting;
+    console.log(gret);
+  div.container
+    
+  .row
+    .col-xs-12.col-sm-8  
+      div.content
+        h1.locatname1= gret
+        p  #{detail}
+      .row.list-group
+      each l in locations
+        - console.log(l);
+        .col-xs-12.list-group-item.group
+          h4
+            a(href="/location/"+l.name)= l.name
+            small &nbsp
+            +callRating(l.rating)
+                
+            span.badge.pull-right.badge-default.distance= l.distance
+          p.address= l.address
+          p   
+            each facility in l.facilities
+              span.label.label-warning= facility
+    .col-xs-12.col-sm-4.split
+      div.content
+        h2 Here your free wifi
+      p.lead Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.  

@@ -1,0 +1,78 @@
+
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:blanchedalmond;
+  color:black;  
+}*/
+.navbar{
+  background-color: #AF2A38 !important;
+}
+
+.lic a.active{
+  background-color: #28917F !important;
+}
+.navbar .navbar-brand {
+  color: #F9F7F3 !important;
+  font-family: 'Lobster', cursive;
+}
+.locatname
+{
+  margin-left: 30px;
+  color: #F9F7F3 !important;
+  font-family: 'Lobster', cursive;
+}
+.locatname1
+{
+  margin-top: 70px;
+  margin-left: 30px;
+  color: #F9F7F3 !important;
+  font-family: 'Lobster', cursive;
+}
+.locatname2
+{
+  color: #F9F7F3 !important;
+  font-family: 'Lobster', cursive;
+}
+.lic a{
+  color: azure!important;
+}
+.lic a:hover{
+  background-color: #28917F !important;
+}
+.group
+{
+  margin-left: 10px !important;
+  border: 1px;
+  border-color: azure;
+  background-color: #B5E2FA;
+}
+.split{
+  margin-top: 90px;
+}
+.headgroup{
+  background-color: #AF2A38
+}
+.contentgroup{
+  background-color: #B5E2FA;
+  color: #0FA3B1;
+}
+.distance{
+  background-color: #AF2A38 !important;
+  margin-right: 40px!important;
+}
+body
+{
+  color: azure;
+  background-color: #0FA3B1;
+}
+.content{
+  margin-top: 100px;
+  text-align: center
+}
+footer{
+  text-align: center
+}
+.review{
+  margin-top: 20px;
+}

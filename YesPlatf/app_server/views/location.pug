@@ -1,0 +1,73 @@
+extends layout
+include ../_include/sharedHTMLfunction.pug
+block  content
+    h1.locatname1= location.name
+    hr
+    .col-xs-12.col-sm-8
+        .col-xs-6
+            small &nbsp
+            +callRating(location.rating)
+            span.badge.pull-right.badge-default.distance= location.distance
+            p.address= location.address
+            ul.list-group
+                li.list-group-item.headgroup.locatname2 
+                    h4  Opening Hours  
+                li.list-group-item.contentgroup 
+                    p.lead 
+                        | Morning from 7AM to 11.30AM
+                        br 
+                        | Afternoon from 13.30PM to 16.30PM
+                        br
+                        | Tonight from 19.30PM to 21.30PM
+            ul.list-group
+                li.list-group-item.headgroup.locatname2 
+                    h4  Facilities  
+                li.list-group-item.contentgroup 
+                    each fac in location.facilities    
+                        span.label.label-warning= fac
+            ul.list-group
+                li.list-group-item.headgroup.locatname2 
+                    h4  Reviews 
+                    a.btn.btn-warning(href="/location/review/new")  Thêm review 
+                    ul.list-group
+                        br
+                        li.list-group-item.contentgroup 
+                            small &nbsp
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star-empty
+                            span.glyphicon.glyphicon-star-empty 
+                            span Anh Vanh Le: 
+                            p Wifi như că* mà cũng được 3 sao             
+                        br
+                        li.list-group-item.contentgroup 
+                            small &nbsp
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star-empty
+                            span.glyphicon.glyphicon-star-empty 
+                            span Viet Anh Le Mai: 
+                            p Đúng rồi đấy,wifi như c** ấy  
+                        br
+                        li.list-group-item.contentgroup 
+                            small &nbsp
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star
+                            span.glyphicon.glyphicon-star-empty
+                            span.glyphicon.glyphicon-star-empty 
+                            span Cô Thủ Thư Già mẹ bạn Phúc: 
+                            p Giỏi thì nêu tên thật ra,không dùng thì cút,đkm..           
+        .col-xs-6
+            ul.list-group
+                li.list-group-item.headgroup.locatname2 
+                    h4 Ảnh địa điểm  
+                li.list-group-item.contentgroup 
+                    img(src="../public/images/hutech.jpg" width="450px" height="350px")
+                    p  Cái này của Hutech mà thôi kệ,cứ lấy về trưng
+                    img(src="../public/images/thuvienMIT.jpg" width="450px" height="350px")
+                    p  Còn cái này là của MIT,trường mình lấy đâu?
+    .col-xs-12.col-sm-4
+        p.lead Các bạn đã bị lừa,thực ra thư viện trường mình không được thế đâu nhưng được cái cũng có wifi với bạn ghế đủ ngồi,quạt mát,điều hòa đầy đủ mỗi tội ít bật lắm..Hãy thêm review chửi trường để cho vui thôi chứ trường không give a fuck about it đâu, yé!

@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+body
+  block head
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      div.container-fluid
+        div.navbar-header
+          button.navbar-toggle(type="button" data-toggle="collapse" data-target="#myNavbar")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="/") WifiLoc
+        div#myNavbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.lic
+              a(href="/location") Location
+            li.lic
+              a(href="/about") About
+
+  block content
+  block foot
+    footer
+      .row
+      .col-xs-12
+      small &copy; Vanh Le 2018
+  block script
+    script(src='/javascripts/jquery-3.3.1.min.js')
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    
